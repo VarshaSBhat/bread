@@ -62,3 +62,43 @@ document.getElementById('nightModeToggle').addEventListener('click', () => {
     }
     document.body.style.backgroundColor = document.body.classList.contains('night-mode') ? '#333' : '#f5f5dc';
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('#background-images img');
+
+    images.forEach(img => {
+        img.addEventListener('mousedown', startDrag);
+    });
+
+    function startDrag(event) {
+        const img = event.target;
+        let shiftX = event.clientX - img.getBoundingClientRect().left;
+        let shiftY = event.clientY - img.getBoundingClientRect().top;
+
+        //img.style.position = 'absolute';
+        //img.style.zIndex = 1000;
+        //document.body.append(img);
+
+        moveAt(event.pageX, event.pageY);
+
+        function moveAt(pageX, pageY) {
+            img.style.left = pageX - shiftX + 'px';
+            img.style.top = pageY - shiftY + 'px';
+        }
+
+        function onMouseMove(event) {
+            moveAt(event.pageX, event.pageY);
+        }
+
+        document.addEventListener('mousemove', onMouseMove);
+
+        img.onmouseup = function() {
+            document.removeEventListener('mousemove', onMouseMove);
+            img.onmouseup = null;
+        };
+
+        img.ondragstart = function() {
+            return false;
+        };
+    }
+});

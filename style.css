@@ -14,7 +14,7 @@ body {
     position: relative; 
     overflow: hidden; 
 }
-
+/*
 #background-images {
     position: absolute;
     top: 0;
@@ -23,8 +23,8 @@ body {
     height: 100%;
     z-index: -1; 
     pointer-events: none; 
-}
-
+}*/
+/*
 #background-images img {
     position: absolute;
     width: 100px; 
@@ -32,6 +32,17 @@ body {
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8; 
+}*/
+
+#background-images img {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8; /* Slight transparency */
+    cursor: grab; /* Change cursor to indicate draggability */
+    z-index: 1; /* Ensure images stay on top */
 }
 
 #background-images img:nth-child(1) { top: 5%; left: 10%; transform: rotate(15deg); }
@@ -46,14 +57,14 @@ body {
 #background-images img:nth-child(10) { top: 30%; left: 50%; transform: rotate(-15deg); }
 #background-images img:nth-child(11) { top: 60%; left: 40%; transform: rotate(5deg); }
 #background-images img:nth-child(12) { top: 75%; left: 55%; transform: rotate(-20deg); }
-#background-images img:nth-child(13) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(14) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(15) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(16) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(17) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(18) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(19) { top: 60%; left: 40%; transform: rotate(5deg); }
-#background-images img:nth-child(20) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(13) { top: 22%; left: 81%; transform: rotate(5deg); }
+#background-images img:nth-child(14) { top: 27%; left: 95%; transform: rotate(5deg); }
+#background-images img:nth-child(15) { top: 12%; left: 87%; transform: rotate(5deg); }
+#background-images img:nth-child(16) { top: 7%; left: 4%; transform: rotate(5deg); }
+#background-images img:nth-child(17) { top: 77%; left: 48%; transform: rotate(5deg); }
+#background-images img:nth-child(18) { top: 65%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(19) { top: 88%; left: 55%; transform: rotate(5deg); }
+#background-images img:nth-child(20) { top: 99%; left: 0%; transform: rotate(5deg); }
 
 #controls {
     display: flex;
