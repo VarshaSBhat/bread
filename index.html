@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Graph</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-images">
+        <img src="pain.png" alt="Pain au Chocolat">
+        <img src="coffee.png" alt="Coffee">
+        <img src="pain.png" alt="Pain au Chocolat">
+        <img src="coffee.png" alt="Coffee">
+        <img src="pain.png" alt="Pain au Chocolat">
+        <img src="coffee.png" alt="Coffee">
+        <img src="pain.png" alt="Pain au Chocolat">
+        <img src="coffee.png" alt="Coffee">
+        <img src="pain.png" alt="Pain au Chocolat">
+        <img src="coffee.png" alt="Coffee">
+        
+
+    </div>
+    <div id="background-lines">
+        <svg>
+            <path class="line" d="M-100,100 Q150,50 300,100 T700,100 T1100,100"/>
+            <path class="line" d="M-100,200 Q200,150 400,200 T800,200 T1200,200"/>
+            <path class="line" d="M-100,300 Q250,250 500,300 T900,300"/>
+            <path class="line" d="M-100,400 Q200,350 400,400 T800,400"/>
+            <path class="line" d="M-100,500 Q300,450 600,500 T900,500"/>
+            <path class="line" d="M-100,600 Q400,550 800,600 T1200,600"/>
+            <path class="line" d="M-100,700 Q500,650 1000,700 T1500,700"/>
+            <path class="line" d="M-100,800 Q300,750 600,800 T900,800"/>
+            <path class="line" d="M-100,900 Q200,850 400,900 T800,900"/>
+            <path class="line" d="M-100,1000 Q100,950 200,1000 T400,1000"/>
+        </svg>
+    </div>
+    <div id="controls">
+        <div class="friend">
+            <h3>Vaibhavi</h3>
+            <button onclick="updateVariable('A', 1)">Owes a bread</button>
+            <button onclick="updateVariable('A', -1)">Bought a bread</button>
+        </div>
+        <div class="friend">
+            <h3>Varsha</h3>
+            <button onclick="updateVariable('B', 1)">Owes a bread</button>
+            <button onclick="updateVariable('B', -1)">Bought a bread</button>
+        </div>
+    </div>
+    <div id="myPlot"></div>
+    <script src="script.js"></script>
+</body>
+</html>

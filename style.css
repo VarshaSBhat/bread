@@ -1,0 +1,159 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; 
+    background-image: url('https://example.com/background-image.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    position: relative; 
+    overflow: hidden; 
+}
+
+#background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+#background-images img {
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8; 
+}
+
+#background-images img:nth-child(1) { top: 5%; left: 10%; transform: rotate(15deg); }
+#background-images img:nth-child(2) { top: 45%; left: 20%; transform: rotate(-20deg); }
+#background-images img:nth-child(3) { top: 25%; left: 60%; transform: rotate(30deg); }
+#background-images img:nth-child(4) { top: 35%; left: 50%; transform: rotate(-10deg); }
+#background-images img:nth-child(5) { top: 15%; left: 80%; transform: rotate(25deg); }
+#background-images img:nth-child(6) { top: 80%; left: 5%; transform: rotate(-25deg); }
+#background-images img:nth-child(7) { top: 70%; left: 55%; transform: rotate(10deg); }
+#background-images img:nth-child(8) { top: 25%; left: 15%; transform: rotate(-5deg); }
+#background-images img:nth-child(9) { top: 85%; left: 85%; transform: rotate(20deg); }
+#background-images img:nth-child(10) { top: 30%; left: 50%; transform: rotate(-15deg); }
+#background-images img:nth-child(11) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(12) { top: 75%; left: 55%; transform: rotate(-20deg); }
+#background-images img:nth-child(13) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(14) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(15) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(16) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(17) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(18) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(19) { top: 60%; left: 40%; transform: rotate(5deg); }
+#background-images img:nth-child(20) { top: 60%; left: 40%; transform: rotate(5deg); }
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px 0 20px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; 
+    z-index: 1;
+}
+
+.friend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friend h3 {
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b4513; 
+    color: white;
+}
+
+button:hover {
+    background-color: #6f4f28; 
+}
+
+#myPlot {
+    width: 80%;
+    max-width: 1000px;
+    height: 500px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+    pointer-events: none; 
+}
+
+#background-lines svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.line {
+    fill: none;
+    stroke: #8b4513; 
+    stroke-width: 3; 
+
+}
+
+#background-lines svg path {
+    d: path("M-100,100 Q150,50 300,100 T700,100 T1100,100");
+}
+#background-lines svg path:nth-child(2) {
+    d: path("M-100,200 Q200,150 400,200 T800,200 T1200,200");
+}
+#background-lines svg path:nth-child(3) {
+    d: path("M-100,300 Q250,250 500,300 T900,300");
+}
+#background-lines svg path:nth-child(4) {
+    d: path("M-100,400 Q200,350 400,400 T800,400");
+}
+#background-lines svg path:nth-child(5) {
+    d: path("M-100,500 Q300,450 600,500 T900,500");
+}
+#background-lines svg path:nth-child(6) {
+    d: path("M-100,600 Q400,550 800,600 T1200,600");
+}
+#background-lines svg path:nth-child(7) {
+    d: path("M-100,700 Q500,650 1000,700 T1500,700");
+}
+#background-lines svg path:nth-child(8) {
+    d: path("M-100,800 Q300,750 600,800 T900,800");
+}
+#background-lines svg path:nth-child(9) {
+    d: path("M-100,900 Q200,850 400,900 T800,900");
+}
+#background-lines svg path:nth-child(10) {
+    d: path("M-100,1000 Q100,950 200,1000 T400,1000");
+}
