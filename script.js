@@ -51,3 +51,14 @@ function updatePlot() {
 }
 
 updatePlot();
+
+document.getElementById('nightModeToggle').addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+    const nightModeButton = document.getElementById('nightModeToggle');
+    if (document.body.classList.contains('night-mode')) {
+        nightModeButton.textContent = 'Day Mode'; 
+    } else {
+        nightModeButton.textContent = 'Night Mode'; 
+    }
+    document.body.style.backgroundColor = document.body.classList.contains('night-mode') ? '#333' : '#f5f5dc';
+});

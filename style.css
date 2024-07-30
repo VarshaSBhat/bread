@@ -157,3 +157,49 @@ button:hover {
 #background-lines svg path:nth-child(10) {
     d: path("M-100,1000 Q100,950 200,1000 T400,1000");
 }
+
+.icon {
+    position: absolute;
+    right: 10px; /* Position the icon 10px from the right edge */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 24px; /* Adjust size as needed */
+    color: var(--icon-color); /* Icon color */
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    --bg-color: #333; /* Dark background */
+    --text-color: #f5f5dc; /* Light text */
+    --button-bg: #6f4f28; /* Darker brown for buttons */
+    --button-text-color: #f5f5dc; /* Light text for buttons */
+    --icon-color: #f5f5dc; /* Light icon color */
+}
+
+#nightModeToggle {
+    margin-top: 20px; /* Space from the plot area */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    position: fixed; /* Keep it in a fixed position */
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#nightModeToggle:hover {
+    background-color: #6f4f28; /* Darker brown on hover */
+}
+
+/* Default (Day Mode) */
+:root {
+    --bg-color: #f5f5dc; /* Light beige */
+    --text-color: #333;
+    --button-bg: #8b4513; /* Brown background */
+    --button-text-color: white;
+    --icon-color: #8b4513; /* Icon color */
+}
