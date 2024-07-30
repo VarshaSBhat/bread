@@ -26,7 +26,7 @@ function updatePlot() {
         y: dataA,
         type: 'scatter',
         mode: 'lines+markers',
-        name: 'Friend A',
+        name: 'Vaibhavi',
         line: {shape: 'linear'},
     };
     const traceB = {
@@ -34,7 +34,7 @@ function updatePlot() {
         y: dataB,
         type: 'scatter',
         mode: 'lines+markers',
-        name: 'Friend B',
+        name: 'Varsha',
         line: {shape: 'linear'},
     };
     const layout = {
